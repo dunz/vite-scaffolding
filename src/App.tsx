@@ -4,7 +4,7 @@ import './App.css';
 
 function App(): React.ReactNode {
     const [count, setCount] = useState(0);
-    const a = 123;
+
     return (
         <div className="App">
             <header className="App-header">
