@@ -291,7 +291,7 @@ extends: [
 ],
 plugins: [..., 'import'],
 rules: {
-    ...
+    ...,
     'import/order': [
         2,
         {
