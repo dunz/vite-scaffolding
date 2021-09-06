@@ -273,6 +273,42 @@ npm i -D standard-version
 npm run release
 ```
 
+## 11. [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import) 플러그인 적용하기
+
+> import 되는 모듈간의 순서 정렬 및 그룹핑
+
+설치하기
+```sh
+npm install -D eslint-plugin-import
+```
+
+`eslintrc.js` 설정 추가하기
+
+```js
+extends: [
+    ...,
+    'plugin:import/recommended',
+    'plugin:import/typescript'
+],
+plugins: [..., 'import'],
+rules: {
+    ...,
+    'import/order': [
+        2,
+        {
+            groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+            'newlines-between': 'always',
+            alphabetize: {
+                order: 'asc',
+                caseInsensitive: true
+            }
+        }
+    ]
+}
+
+```
+
+
 참고링크: [conventional commit](https://www.conventionalcommits.org/ko/v1.0.0/)
 
 ## 참고
