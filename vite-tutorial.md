@@ -283,7 +283,8 @@ npm install -D eslint-plugin-import
 ```
 
 `eslintrc.js` 설정 추가하기
-```
+
+```js
 extends: [
     ...,
     'plugin:import/recommended',
