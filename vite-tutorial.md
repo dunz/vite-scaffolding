@@ -272,6 +272,7 @@ npm i -D standard-version
 ```sh
 npm run release
 ```
+참고링크: [conventional commit](https://www.conventionalcommits.org/ko/v1.0.0/)
 
 ## 11. [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import) 플러그인 적용하기
 
@@ -327,8 +328,6 @@ extends: [
 ```
 
 
-
-참고링크: [conventional commit](https://www.conventionalcommits.org/ko/v1.0.0/)
 
 ## 참고
 
