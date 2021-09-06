@@ -308,6 +308,25 @@ rules: {
 
 ```
 
+## 12. eslint-plugin-react-hooks 플러그인 적용하기
+
+> 리액트 훅 사용시 오류 방지
+
+설치하기
+```sh
+npm install -D eslint-plugin-react-hooks
+```
+
+`eslintrc.js` 설정 추가하기
+
+```js
+extends: [
+    ...,
+    'plugin:react-hooks/recommended'
+]
+```
+
+
 
 참고링크: [conventional commit](https://www.conventionalcommits.org/ko/v1.0.0/)
 
