@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Option, UnControlledSelect } from './components/UnControlledSelect';
+
+const choices: Option[] = [
+    ['grapefruit', 'Grapefruit'],
+    ['lime', 'Lime'],
+    ['coconut', 'Coconut'],
+    ['mango', 'Mango']
+];
 
 function App(): JSX.Element {
-    const [count, setCount] = useState(0);
-
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Hello Vite + React!</p>
-                <p>
-                    <button type="button" onClick={() => setCount((count) => count + 1)}>
-                        count is: {count}
-                    </button>
-                </p>
-                <p>
-                    Edit <code>App.tsx</code> and save to test HMR updates.
-                </p>
                 <p>
                     <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
                         Learn React
@@ -27,6 +22,9 @@ function App(): JSX.Element {
                         Vite Docs
                     </a>
                 </p>
+
+                <h2>UnControlledSelect</h2>
+                <UnControlledSelect values={choices} selectedValue="lime" onValueChange={(val) => console.log(val)} />
             </header>
         </div>
     );
