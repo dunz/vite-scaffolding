@@ -4,7 +4,14 @@ module.exports = {
         node: true,
         browser: true
     },
-    extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'prettier',
+        'plugin:import/recommended',
+        'plugin:import/typescript'
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -13,9 +20,19 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: 'module'
     },
-    plugins: ['react', '@typescript-eslint'],
+    plugins: ['react', '@typescript-eslint', 'import'],
     rules: {
-        '@typescript-eslint/no-unused-vars': ['error']
+        'import/order': [
+            2,
+            {
+                groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
+                'newlines-between': 'always',
+                alphabetize: {
+                    order: 'asc',
+                    caseInsensitive: true
+                }
+            }
+        ]
     },
     ignorePatterns: ['node_modules', 'dist'],
     settings: {
