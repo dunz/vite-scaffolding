@@ -4,6 +4,7 @@
 - SPA 프레임웍: React
 - 언어: Typescript
 - 코드검사: eslint
+- 코드검사 플러그인:
 - 코드스타일: prettier
 
 ## Vite알아보고 스캐폴딩 구성하기
