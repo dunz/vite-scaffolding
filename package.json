@@ -1,6 +1,6 @@
 {
   "homepage": "https://dunz.github.io/vs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -8,7 +8,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "prepare": "husky install",
-    "lint-staged": "lint-staged --verbose"
+    "lint-staged": "lint-staged --verbose",
+    "release": "standard-version --no-verify -t ''"
   },
   "dependencies": {
     "react": "^17.0.0",
@@ -31,6 +32,7 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
+    "standard-version": "^9.3.1",
     "typescript": "^4.4.3",
     "vite": "^2.6.2"
   },
