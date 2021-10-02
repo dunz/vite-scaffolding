@@ -1,6 +1,6 @@
 {
   "homepage": "https://dunz.github.io/vs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
