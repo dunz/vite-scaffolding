@@ -18,6 +18,15 @@
 repl 이용한 방법
 
 ```shell
+// npm
+npm create vite@latest
+// yarn
+yarn create vite
+```
+
+repl 없이 한번에 설정
+
+```shell
 # npm 6.x
 npm create vite@latest my-vue-app --template vue
 
@@ -29,12 +38,6 @@ yarn create vite my-vue-app --template vue
 
 # pnpm
 pnpm create vite my-vue-app --template vue
-```
-
-repl 없이 한번에 설정
-
-```shell
-npm init @vitejs/app [폴더명] --template [템플릿]
 ```
 
 ## 2. 빌드 및 데브서버 실행
