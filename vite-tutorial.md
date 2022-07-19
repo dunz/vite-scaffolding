@@ -18,11 +18,17 @@
 repl 이용한 방법
 
 ```shell
-npm init @vitejs/app
-```
+# npm 6.x
+npm create vite@latest my-vue-app --template vue
 
-```shell
-yarn create @vitejs/app
+# npm 7+, extra double-dash is needed:
+npm create vite@latest my-vue-app -- --template vue
+
+# yarn
+yarn create vite my-vue-app --template vue
+
+# pnpm
+pnpm create vite my-vue-app --template vue
 ```
 
 repl 없이 한번에 설정
