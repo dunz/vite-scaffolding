@@ -131,10 +131,12 @@ npm i -D prettier
 후 변경
 
 ```
-"singleQuote": true,
-"printWidth": 150,
-"trailingComma": "none",
-"tabWidth": 4,
+{
+    "singleQuote": true,
+    "printWidth": 150,
+    "trailingComma": "none",
+    "tabWidth": 4,
+}
 ```
 
 eslint 연동
