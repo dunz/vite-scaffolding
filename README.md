@@ -1,3 +1,8 @@
+## Quick Start
+```sh
+npx degit github:dunz/vs [name]
+```
+
 ## Stack
 
 - 번들러: `Vite`
